@@ -8,6 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- HANDLEBARS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+  <!-- MOMENT.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha256-AdQN98MVZs44Eq2yTwtoKufhnU+uZ7v2kXnD5vqzZVo=" crossorigin="anonymous"></script>
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- STYLE -->
@@ -15,11 +17,20 @@
   <title>Calendar</title>
 </head>
 <body>
-  <div class="wrapper"></div>
+  <div class="wrapper">
+    <h2>Gennaio</h2>
+    <span> prev </span><span> next </span>
+    <ul class="month gennaio" >
+
+    </ul>
+  </div>
 
 
 
-
+  <!--   TEMPLATE -->
+  <script id="entry-template" type="text/x-handlebars-template">
+    <li class="days">{{date}}</li>
+  </script>
 
   <script src="js/script.js" charset="utf-8"></script>
 </body>
