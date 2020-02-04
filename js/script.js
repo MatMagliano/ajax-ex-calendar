@@ -10,16 +10,24 @@ $(document).ready(function() {
   $('.next').click(function () {
     var thisMonth = $('h2').attr('data-this-month');
     var date = moment(thisMonth).add(1, 'months');
-    console.log(date);
+    if (thisMonth == '2018-12') {
+      alert('stop')
+      var date = moment(thisMonth).subtract(11, 'months');
 
+    }
+
+
+    console.log(thisMonth);
     printMonth(date);
     printHoliday(date);
   });
   $('.prev').click(function () {
     var thisMonth = $('h2').attr('data-this-month');
     var date = moment(thisMonth).subtract(1, 'months');
-    console.log(date);
-
+    if(thisMonth == '2018-01') {
+      alert('stop');
+      var date = moment(thisMonth).add(0, 'months');
+    }
     printMonth(date);
     printHoliday(date);
   });

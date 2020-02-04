@@ -9,6 +9,9 @@
   /* text-align: center; */
 
 }
+.click-month:hover {
+  cursor: pointer;
+}
 .green {
   color: lightgreen;
 }
