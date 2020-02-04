@@ -3,15 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Muli', sans-serif;
+}
 .wrapper {
   width: 100vw;
-  height: 100%;
-  /* text-align: center; */
-
+  height: 100vh;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+h2 {
+  margin: 0 10px;
 }
 .click-month:hover {
   cursor: pointer;
 }
+.month {
+  margin: auto;
+  width: 1050px;
+  height: 800px;
+}
+.name_holiday {
+  margin-top: 40px;
+  text-align: center;
+}
+.data_complete {
+  float: left;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  text-align: left;
+  border: 1px solid silver;
+}
+.data_complete:hover {
+  cursor: pointer;
+}
 .green {
-  color: lightgreen;
+  background-color: #F76C5E;
+  color: #fff;
 }

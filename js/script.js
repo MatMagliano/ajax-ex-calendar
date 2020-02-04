@@ -48,7 +48,7 @@ function printMonth(month) {
     var template = Handlebars.compile(source);
     var context = {
       date: month.format('YYYY-MM') + '-' + addZero(i) ,
-      days: month.format(num + '-MMMM-YYYY'),
+      days: i,
     };
     var html = template(context);
     $('.month').append(html);
@@ -69,8 +69,8 @@ function printHoliday(month) {
         for (var i = 0; i < holiday.length; i++) {
           var thisHoliday = holiday[i];
           var thisHolidayData = thisHoliday.date;
-          $('li[data-value="'+ thisHolidayData  +'"]').addClass('green');
-          $('li[data-value="'+ thisHolidayData  +'"]').find('.name_holiday').append(' -' + thisHoliday.name);
+          $('div[data-value="'+ thisHolidayData  +'"]').addClass('green');
+          $('div[data-value="'+ thisHolidayData  +'"]').find('.name_holiday').append(thisHoliday.name);
         }
 
       },
