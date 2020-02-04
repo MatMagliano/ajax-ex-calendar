@@ -6,6 +6,9 @@
 .wrapper {
   width: 100vw;
   height: 100%;
-  text-align: center;
-  
+  /* text-align: center; */
+
+}
+.green {
+  color: lightgreen;
 }
